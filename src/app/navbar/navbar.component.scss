@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+$main_color: rgb(88, 153, 254);
+
+.ecommerce-navbar
+{
+  background-color: $main_color;
+  display: flex;
+  height: 78px;
+  padding: 14px 0;
+  text-align: justify;
+
+  a
+  {
+    border-bottom: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 21px;
+    font-family: 'Lato';
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 5px;
+    margin: 10px 20px;
+  }
+
+  .button-collapse
+  {
+    background-color: inherit;
+    border: 0;
+    display: none;
+
+    @media (max-width: 856px)
+    {
+      display: block;
+    }
+
+    .icon-collapse
+    {
+      color: rgba(0, 0, 0, 0.7);
+
+      &:hover
+      {
+        transition: 0.5s;
+        color: rgba(0, 0, 0, 0.9);
+      }
+
+      &:not(:hover)
+      {
+        transition: 0.5s;
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+
+  .logo-button
+  {
+    background-color: inherit;
+    border: 0;
+    cursor: default;
+    height: 50px;
+    width: 50px;
+
+
+    .icon-logo
+    {
+      color: rgba(0, 0, 0, 0.8);
+      background-color: white;
+      border-radius: 100%;
+      padding: 2px;
+      margin-left: 10px;
+    }
+  }
+
+  .content
+  {
+    height: 50px;
+    width: 70%;
+    display: block;
+
+    @media (max-width: 856px)
+    {
+      display: none;
+    }
+
+    a
+    {
+      border-bottom: 0;
+      color: white;
+      cursor: pointer;
+      font-size: 21px;
+      font-family: 'Lato';
+      font-weight: 600;
+      text-decoration: none;
+      padding-bottom: 5px;
+      margin: 10px 20px;
+    }
+
+    .anchor-cart
+    {
+      font-size: 15px;
+
+      .icon-cart
+      {
+        height: 50px;
+        widows: 50px;
+      }
+    }
+  }
+
+  .search-div
+  {
+    height: 50px;
+    text-align: end;
+    margin: 10px 10px 0 0;
+    width: 30%;
+
+    @media (max-width: 856px)
+    {
+      width: 100%;
+      text-align: end;
+    }
+
+
+    .button-search-icon
+    {
+      background-color: inherit;
+      border: 0;
+      color: white;    
+    }
+
+    input
+    {
+      background-color: inherit;
+      border: 0;
+      border-bottom: 1px solid white;
+      outline: none;
+    }
+  }
+}
+
+.mobile-sidebar
+{
+  display: none;
+
+  @media (max-width: 856px)
+  {
+    display: block;
+    background-color: rgba(88, 153, 254, 0.7);
+
+    .mobile-link
+    {
+      padding: 20px 0;
+
+      a
+      {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}

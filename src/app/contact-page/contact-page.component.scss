@@ -1,0 +1,86 @@
+.contact-page
+{
+  min-height: 70vh;
+  
+  .title
+  {
+    margin: 20px 0 50px 0;
+  }
+
+  input
+  {
+    &:hover
+    {
+      transition: 0.5s;
+      transform: translateY(-5px);
+    }
+    &:not(:hover)
+    {
+      transition: 0.5s;
+      transform: translateY(0);
+    }
+  }
+  
+  .textarea-div
+  {
+    margin: 30px 0;
+    
+    textarea
+    {
+      resize: none;
+
+      &:hover
+      {
+        transition: 0.5s;
+        transform: translateY(-5px);
+      }
+      &:not(:hover)
+      {
+        transition: 0.5s;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .button-default-outline
+  {
+    height: 42px;
+    width: 157px;
+    border: 2px solid #5899FE;
+    background-color: inherit;
+    font-family: "Lato";
+    font-weight: bolder;
+    font-size: 12px;
+    line-height: 14.4px;
+    color: #5899FE;
+
+    a
+    {
+      text-decoration: none;
+      color: #5899FE;
+    }
+
+    &:hover
+    {
+      transition: 0.5s;
+      transform: translateY(-5px);
+      border: 2px solid #5899FE;
+      background-color: #5899FE;
+      a
+      {
+        color: white;
+      }
+    }
+
+    &:not(:hover)
+    {
+      transition: 0.5s;
+      border: 2px solid #5899FE;
+      background-color: inherit;
+      a
+      {
+        color: #5899FE;
+      }
+    }
+  }
+}

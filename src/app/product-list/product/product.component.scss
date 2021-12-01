@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Inter&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+  
+  .products
+  {
+
+    img
+    {
+      margin: 10px 0;
+      height: 200px;
+    }
+
+    .button-default-outline
+    {
+      height: 42px;
+      width: 157px;
+      border: 2px solid #5899FE;
+      background-color: inherit;
+      font-family: "Lato";
+      font-weight: bolder;
+      font-size: 12px;
+      line-height: 14.4px;
+      color: #5899FE;
+  
+      &:hover
+      {
+        transition: 0.5s;
+        transform: translateY(-5px);
+        border: 2px solid #5899FE;
+        background-color: #5899FE;
+        color: white;
+      }
+  
+      &:not(:hover)
+      {
+        transition: 0.5s;
+        border: 2px solid #5899FE;
+        background-color: inherit;
+        color: #5899FE;
+      }
+    }
+    
+    .button-default 
+    {
+      height: 42px;
+      width: 157px;
+      border: 2px solid #5899FE;
+      background-color: #5899FE;
+      font-family: "Lato";
+      font-weight: bolder;
+      font-size: 12px;
+      line-height: 14.4px;
+      color: white;
+      margin-bottom: 50px;
+  
+      &:hover
+      {
+        transition: 0.5s;
+        transform: translateY(-5px);
+        border: 2px solid #5899FE;
+        background-color: inherit;
+        color: #5899FE;
+      }
+  
+      &:not(:hover)
+      {
+        transition: 0.5s;
+        border: 2px solid #5899FE;
+        background-color: #5899FE;
+        color: white;
+      }
+    }
+
+    a
+    {
+      text-decoration: none;
+    }
+
+    .product-price, .product-description
+    {
+      color: #343434;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      font-family: 'Lato';
+    }
+  }

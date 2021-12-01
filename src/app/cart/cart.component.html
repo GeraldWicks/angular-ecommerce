@@ -1,0 +1,27 @@
+<div class="cart-page">
+  <h1 class="title">Cart Page</h1>
+  <div *ngIf="!cart.quantity">
+    <h3 class="subtitle">Your Cart is Empty :(</h3>
+    <button class="button-default-outline" [routerLink]="['/products']">
+      See Products
+    </button>
+  </div>
+  <div *ngFor="let product of products; let index=index" class="cart-items">
+    <p *ngIf="product.cart.quantity" class="description">
+      <img [attr.src]="product.imgUrl" class="product-image" />
+      {{product.name}}, quantity: {{product.cart.quantity}}
+      <a class="delete-anchor" (click)="deleteCartItem(index)">
+        <span
+          class="iconify"
+          data-icon="fa-solid:trash-alt"
+          data-width="15"
+        ></span>
+      </a>
+    </p>
+  </div>
+  <hr />
+  <div *ngIf="cart.quantity">
+    <h3>Total = $ {{cart.totalPrice}}</h3>
+    <a (click)="goToLink()"><button class="button-default">Checkout</button></a>
+  </div>
+</div>

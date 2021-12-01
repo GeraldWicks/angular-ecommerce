@@ -1,0 +1,42 @@
+<div class="product row">
+  <div class="col-lg-6 col-md-12">
+    <img [attr.src]="product.imgUrl" />
+  </div>
+  <div class="col-lg-6 col-md-12 text">
+    <h1 class="product-title">{{ product.name }}</h1>
+    <p class="product-price">$ {{ product.price }}</p>
+    <p *ngIf="product.description" class="product-description">
+      {{ product.description }}
+    </p>
+    <button class="button-default" (click)="addToCart(product.index)">
+      Add to Cart
+    </button>
+  </div>
+</div>
+<hr />
+
+<div class="row bottom-products">
+  <h2>Products related to this item</h2>
+  <div
+    class="col-lg-3"
+    *ngFor="let bottomProduct of products;let index = index"
+  >
+    <div
+      *ngIf="index > product.firstProduct - 1 && index < product.firstProduct + 4"
+    >
+      <a
+        (click)="setProductClicked(index)"
+        class="img-anchor"
+        [title]="bottomProduct.name"
+        [routerLink]="['/product']"
+      >
+        <img [attr.src]="bottomProduct.imgUrl" />
+      </a>
+
+      <a [routerLink]="['/product']"
+        ><h3 class="product-title">{{ bottomProduct.name }}</h3></a
+      >
+      <p class="product-price">$ {{ bottomProduct.price }}</p>
+    </div>
+  </div>
+</div>

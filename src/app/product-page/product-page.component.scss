@@ -1,0 +1,127 @@
+.product
+{
+  margin: 0;
+
+  img
+  {
+    margin: 10px 0;
+    height: 500px;
+  }
+
+  .text
+  {
+    text-align: justify;
+    margin: auto;
+
+    .button-default-outline
+    {
+      height: 42px;
+      width: 157px;
+      border: 2px solid #5899FE;
+      background-color: inherit;
+      font-family: "Lato";
+      font-weight: bolder;
+      font-size: 12px;
+      line-height: 14.4px;
+      color: #5899FE;
+  
+      &:hover
+      {
+        transition: 0.5s;
+        transform: translateY(-5px);
+        border: 2px solid #5899FE;
+        background-color: #5899FE;
+        color: white;
+      }
+  
+      &:not(:hover)
+      {
+        transition: 0.5s;
+        border: 2px solid #5899FE;
+        background-color: inherit;
+        color: #5899FE;
+      }
+    }
+    
+    .button-default 
+    {
+      height: 50px;
+      width: 250px;
+      border: 2px solid #5899FE;
+      background-color: #5899FE;
+      font-family: "Lato";
+      font-weight: bolder;
+      font-size: 16px;
+      line-height: 14.4px;
+      color: white;
+      margin-bottom: 50px;
+  
+      &:hover
+      {
+        transition: 0.5s;
+        transform: translateY(-5px);
+        border: 2px solid #5899FE;
+        background-color: inherit;
+        color: #5899FE;
+      }
+  
+      &:not(:hover)
+      {
+        transition: 0.5s;
+        border: 2px solid #5899FE;
+        background-color: #5899FE;
+        color: white;
+      }
+    }
+
+    .product-title
+    {
+      font-size: 54px;
+    }
+  
+    .product-price, .product-description
+    {
+      margin: 30px 0;
+      color: #343434;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 24px;
+      font-family: 'Lato';
+    }
+  }
+
+  @media (max-width: 769px)
+  {
+    img
+    {
+      height: 400px;
+    }
+
+    .text
+    {
+      text-align: center;
+    }
+  }
+}
+
+.bottom-products
+{
+  margin: 0;
+
+  h2
+  {
+    margin: 50px 0;
+  }
+  img
+  {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+  }
+
+  a
+  {
+    text-decoration: none;
+    border: 0;
+  }
+}

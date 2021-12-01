@@ -1,0 +1,188 @@
+<div class="row first-row" id="whoWeAre">
+  <div class="col-lg-4 col-md-12">
+    <img
+      class="img-brazilian-vest"
+      src="https://images-na.ssl-images-amazon.com/images/I/91P4mIOSjgL.png"
+      alt=""
+    />
+  </div>
+  <div class="col-lg-8 col-md-12 first-div">
+    <h1 class="title">Brazilian Vest</h1>
+    <h5 class="description">The bests clothes you find here !</h5>
+    <div class="div-buttons">
+      <a [routerLink]="['/products']" (click)="scrollUp()"
+        ><button class="button-default-outline">
+          SEE PRODUCTS
+        </button></a
+      >
+    </div>
+  </div>
+</div>
+
+<div id="section-produtos-mais-vendidos">
+  <h1 class="section-title">Best sellers</h1>
+
+  <div class="row">
+    <div class="col-lg-4 col-md-12 product-column">
+      <a (click)="setProductClicked(0)" [routerLink]="['/product']"
+        ><h3 class="title">{{products[0].name}}</h3></a
+      >
+      <div class="div-img">
+        <a (click)="setProductClicked(0)" [routerLink]="['/product']"
+          ><img src="{{products[0].imgUrl}}" alt=""
+        /></a>
+      </div>
+      <p class="description">{{products[0].description}}</p>
+      <p class="price">$ {{products[0].price}}</p>
+    </div>
+
+    <div class="col-lg-4 col-md-12 product-column">
+      <a (click)="setProductClicked(1)" [routerLink]="['/product']"
+        ><h3 class="title">{{products[1].name}}</h3></a
+      >
+      <div class="div-img">
+        <a (click)="setProductClicked(1)" [routerLink]="['/product']"
+          ><img src="{{products[1].imgUrl}}" alt=""
+        /></a>
+      </div>
+      <p class="description">{{products[1].description}}</p>
+      <p class="price">$ {{products[1].price}}</p>
+    </div>
+
+    <div class="col-lg-4 col-md-12 product-column">
+      <a (click)="setProductClicked(2)" [routerLink]="['/product']"
+        ><h3 class="title">{{products[2].name}}</h3></a
+      >
+      <div class="div-img">
+        <a (click)="setProductClicked(2)" [routerLink]="['/product']"
+          ><img src="{{products[2].imgUrl}}" alt=""
+        /></a>
+      </div>
+      <p class="description">{{products[2].description}}</p>
+      <p class="price">$ {{products[2].price}}</p>
+    </div>
+  </div>
+
+  <a [routerLink]="['/products']" (click)="scrollUp()"
+    ><button class="button-default">SEE PRODUCTS</button></a
+  >
+</div>
+
+<div id="section-produtos-em-destaque">
+  <h1 class="section-title">New products</h1>
+
+  <div class="row">
+    <div class="col-lg-4 col-md-12 product-column">
+      <a (click)="setProductClicked(14)" [routerLink]="['/product']"
+        ><h3 class="title">{{products[14].name}}</h3></a
+      >
+      <div class="div-img">
+        <a (click)="setProductClicked(14)" [routerLink]="['/product']"
+          ><img src="{{products[14].imgUrl}}" alt=""
+        /></a>
+      </div>
+      <p class="description">{{products[14].description}}</p>
+      <p class="price">$ {{products[14].price}}</p>
+    </div>
+
+    <div class="col-lg-4 col-md-12 product-column">
+      <a (click)="setProductClicked(9)" [routerLink]="['/product']"
+        ><h3 class="title">{{products[9].name}}</h3></a
+      >
+      <div class="div-img">
+        <a (click)="setProductClicked(9)" [routerLink]="['/product']"
+          ><img src="{{products[9].imgUrl}}" alt=""
+        /></a>
+      </div>
+      <p class="description">{{products[9].description}}</p>
+      <p class="price">$ {{products[9].price}}</p>
+    </div>
+
+    <div class="col-lg-4 col-md-12 product-column">
+      <a (click)="setProductClicked(15)" [routerLink]="['/product']"
+        ><h3 class="title">{{products[15].name}}</h3></a
+      >
+      <div class="div-img">
+        <a (click)="setProductClicked(15)" [routerLink]="['/product']"
+          ><img src="{{products[15].imgUrl}}" alt=""
+        /></a>
+      </div>
+      <p class="description">{{products[15].description}}</p>
+      <p class="price">$ {{products[15].price}}</p>
+    </div>
+  </div>
+
+  <a [routerLink]="['/products']" (click)="scrollUp()"
+    ><button class="button-default-outline">CHECK IT OUT</button></a
+  >
+</div>
+
+<div id="section-depoimentos">
+  <h1 class="section-title">Testimonials</h1>
+
+  <div class="carrossel">
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="testimonial-text">
+            "Everything that I ever wanted."
+          </h2>
+          <img
+            class="testimonial-image"
+            src="https://t.ctcdn.com.br/vvAWVFlVVp6xV4660JzXPkIpxO4=/400x400/smart/i490769.jpeg"
+            alt="dog-profile"
+          />
+          <em>Brazil</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">
+            "The product arrived in 2 days in my house ! "
+          </h2>
+          <img
+            class="testimonial-image"
+            src="https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg"
+            alt="lady-profile"
+          />
+          <em>Canada</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">
+            "I have never seen a product with this high quality. "
+          </h2>
+          <img
+            class="testimonial-image"
+            src="https://t.ctcdn.com.br/6cH4spSG2O5lgK6FQMc5F-CwElM=/400x400/smart/i490767.jpeg"
+            alt="lady-profile"
+          />
+          <em>United States</em>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <a [routerLink]="['/products']" (click)="scrollUp()"
+    ><button class="button-default">SEE PRODUCTS</button></a
+  >
+</div>

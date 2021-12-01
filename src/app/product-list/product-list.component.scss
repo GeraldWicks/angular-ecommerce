@@ -1,0 +1,96 @@
+.product-list
+{
+  margin: 100px 0;
+
+  .row
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  .products
+  {
+    margin: 0;
+
+    img
+    {
+      margin: 10px 0;
+      height: 200px;
+    }
+  }
+
+  .button-group
+  {
+    margin: 30px 0;
+    
+    .button-default-outline
+    {
+      height: 42px;
+      width: 120px;
+      border: 2px solid #5899FE;
+      background-color: inherit;
+      font-family: "Lato";
+      font-weight: bolder;
+      font-size: 12px;
+      line-height: 14.4px;
+      color: #5899FE;
+      margin: 0 10px;
+  
+      &:hover
+      {
+        transition: 0.5s;
+        transform: translateY(-5px);
+        border: 2px solid #5899FE;
+        background-color: #5899FE;
+        color: white;
+      }
+  
+      &:not(:hover)
+      {
+        transition: 0.5s;
+        border: 2px solid #5899FE;
+        background-color: inherit;
+        color: #5899FE;
+      }
+    }
+
+    .button-default 
+    {
+      height: 42px;
+      width: 157px;
+      border: 2px solid #5899FE;
+      background-color: #5899FE;
+      font-family: "Lato";
+      font-weight: bolder;
+      font-size: 12px;
+      line-height: 14.4px;
+      color: white;
+      margin: 0 10px;
+      
+      &:hover
+      {
+        transition: 0.5s;
+        transform: translateY(-5px);
+        border: 2px solid #5899FE;
+        background-color: inherit;
+        color: #5899FE;
+      }
+      
+      &:not(:hover)
+      {
+        transition: 0.5s;
+        border: 2px solid #5899FE;
+        background-color: #5899FE;
+        color: white;
+      }
+    }
+
+    .button-page
+    {
+      border-radius: 100%;
+      height: 42px;
+      width: 42px;
+    }
+  }
+  
+}

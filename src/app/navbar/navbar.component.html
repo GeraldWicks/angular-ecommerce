@@ -1,0 +1,100 @@
+<div class="ecommerce-navbar">
+  <button class="button-collapse" (click)="showSideBar()">
+    <span
+      class="iconify icon-collapse"
+      data-icon="fontisto:nav-icon-a"
+      data-width="25"
+      data-height="25"
+    ></span>
+  </button>
+  <button class="logo-button">
+    <span
+      class="iconify icon-logo"
+      data-icon="map:clothing-store"
+      data-width="40"
+      data-height="40"
+    ></span>
+  </button>
+
+  <div class="content">
+    <a class="link" [routerLink]="['/']" (click)="setCurrentRoute('/')">Home</a>
+    <a
+      class="link"
+      (click)="setCurrentRoute('/products')"
+      [routerLink]="['/products']"
+      >Products</a
+    >
+    <a
+      class="link"
+      (click)="setCurrentRoute('/contact')"
+      [routerLink]="['/contact']"
+      >Contact</a
+    >
+    <a
+      class="link"
+      (click)="setCurrentRoute('/cart')"
+      class="anchor-cart"
+      [routerLink]="['/cart']"
+    >
+      <span
+        class="iconify icon-cart"
+        data-icon="eva:shopping-cart-outline"
+        data-width="30"
+        data-height="30"
+      ></span>
+      {{ cart.quantity }}
+    </a>
+  </div>
+  <div class="search-div">
+    <input
+      type="text"
+      id="searchValue"
+      name="searchValue"
+      #searchValue
+      ng-enter="submitForm()"
+    />
+    <a [routerLink]="getRoterLink()" (click)="searchProduct(searchValue.value)">
+      <button class="button-search-icon">
+        <span class="iconify" data-icon="akar-icons:search"></span>
+      </button>
+    </a>
+  </div>
+</div>
+
+<div class="mobile-sidebar" *ngIf="mobileSidebar.show">
+  <div class="mobile-link">
+    <a class="link" [routerLink]="['/']" (click)="setCurrentRoute('/')">Home</a>
+  </div>
+  <div class="mobile-link">
+    <a
+      class="link"
+      (click)="setCurrentRoute('/products')"
+      [routerLink]="['/products']"
+      >Products</a
+    >
+  </div>
+  <div class="mobile-link">
+    <a
+      class="link"
+      (click)="setCurrentRoute('/contact')"
+      [routerLink]="['/contact']"
+      >Contact</a
+    >
+  </div>
+  <div class="mobile-link">
+    <a
+      class="link"
+      (click)="setCurrentRoute('/cart')"
+      class="anchor-cart"
+      [routerLink]="['/cart']"
+    >
+      <span
+        class="iconify icon-cart"
+        data-icon="eva:shopping-cart-outline"
+        data-width="30"
+        data-height="30"
+      ></span>
+      {{ cart.quantity }}
+    </a>
+  </div>
+</div>

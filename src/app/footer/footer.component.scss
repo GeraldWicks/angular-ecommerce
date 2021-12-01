@@ -1,0 +1,56 @@
+$main_color: rgb(88, 153, 254);
+
+
+#section-footer {
+  background-color: #5899FE;
+  min-height: 40vh;
+  text-align: center;
+}
+
+#section-footer .text .title {
+  padding: 40px 0 20px 0;
+  font-family: "Lato";
+  font-weight: bolder;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+#section-footer .text .description {
+  margin: auto;
+  width: 160px;
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+#section-footer .text .icons {
+  margin-top: 25px;
+}
+
+#section-footer .text .icons .icon {
+  margin: 16px;
+  color: #E5E5E5;
+  height: 22px;
+  width: 22px;
+}
+
+#section-footer .links {
+  margin-top: 50px;
+}
+
+#section-footer .links a {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #E5E5E5;
+  text-decoration: none;
+  margin: 15px;
+}
+
+#section-footer .links a:hover {
+  color: #FFFFFF;
+}

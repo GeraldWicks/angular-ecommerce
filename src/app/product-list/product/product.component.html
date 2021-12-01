@@ -1,0 +1,21 @@
+<div class="products">
+  <a
+    (click)="setProductClicked(index)"
+    class="img-anchor"
+    [title]="product.name"
+    [routerLink]="['/product']"
+  >
+    <img [attr.src]="product.imgUrl" />
+  </a>
+
+  <a [routerLink]="['/product']"
+    ><h3 class="product-title">{{ product.name }}</h3></a
+  >
+  <p class="product-price">$ {{ product.price }}</p>
+  <p *ngIf="product.description" class="product-description">
+    {{ product.description }}
+  </p>
+  <button class="button-default" (click)="addToCart(index)">
+    Add to Cart
+  </button>
+</div>

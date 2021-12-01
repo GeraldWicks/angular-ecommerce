@@ -1,0 +1,19 @@
+<div class="contact-page">
+  <h1 class="title">Contact Us</h1>
+
+  <input type="text" placeholder="Name" />
+  <div class="textarea-div">
+    <textarea
+      cols="30"
+      rows="10"
+      placeholder="Type some message here..."
+      id="searchValue"
+      name="searchValue"
+      #searchValue
+    ></textarea>
+  </div>
+
+  <button class="button-default-outline">
+    <a (click)="goToLink(searchValue.value)"> Send Message</a>
+  </button>
+</div>
